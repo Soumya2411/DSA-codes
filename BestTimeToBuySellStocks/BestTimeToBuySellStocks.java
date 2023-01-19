@@ -4,8 +4,8 @@ class Solution {
        int min=prices[0],max=0;
        for(int price:prices)
        {
-          min=Math.min(min,price);
-          max=Math.max(max,price-min);                                                 
+          min=Math.min(min,price);//minimum nikale hi array aur particular object me
+          max=Math.max(max,price-min);        //max profit yani 0 se profit bda ho to usliye max nikale                                         
        }
        return max;
 
