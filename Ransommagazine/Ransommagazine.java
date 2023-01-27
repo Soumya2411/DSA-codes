@@ -18,7 +18,7 @@ for(char c:ransom.toCharArray()){
     else{
         alpha[c-'a']--;
     }
-    return true;
+    return true; 
 }
         }
     }
