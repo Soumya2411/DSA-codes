@@ -1,6 +1,6 @@
 package grumpybookstore;
 
-
+]
     public int maxSatisfied(int[] customers, int[] grumpy, int X) {
         int satisfied = 0, maxMakeSatisfied = 0;
         for (int i = 0, winOfMakeSatisfied = 0; i < grumpy.length; ++i) {
