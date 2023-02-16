@@ -1,14 +1,13 @@
 package maxdepthofbintree;
 
-import org.w3c.dom.Node;
-
-public class maxdepthofbintree {
-    int height(Node root){
-        if(root==NULL){
-            return 0;
-        }
-        return Math.max(height(root.left),height(root.right))+1;
-        
+class Solution {
+    public int maxDepth(TreeNode root) {
+        // Base Condition
+        if(root == null) return 0;
+        // Hypothesis
+        int left = maxDepth(root.left);
+        int right = maxDepth(root.right);
+        // Induction
+        return Math.max(left, right) + 1;
     }
-    }
-
+}
